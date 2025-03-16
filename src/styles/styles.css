@@ -1,0 +1,344 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+  background-color: #f3e8ff; /* Light purple */
+  color: #4c1d95; /* Dark purple */
+}
+
+/* Navbar Styles */
+.navbar-container {
+  background-color: #6d28d9; /* Medium purple */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ddd;
+}
+
+.navbar-logo {
+  justify-self: flex-end;
+}
+
+/* Buttons */
+button {
+  background-color: #7c3aed; /* Purple */
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #5b21b6; /* Darker purple */
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Login Page */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Inputs & Selects */
+input, select {
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  border: 2px solid #6d28d9;
+  border-radius: 6px;
+  background-color: white;
+  color: #4c1d95;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 250px;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #5b21b6;
+  box-shadow: 0 0 4px rgba(109, 40, 217, 0.3);
+}
+
+input:hover, select:hover {
+  border-color: #f0426a !important; /* Red-pink */
+}
+
+/* Placeholder text */
+input::placeholder {
+  color: #a78bfa;
+}
+
+/* Container for login form */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Wrapper for input fields & button */
+.login-form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* General input styles (Username & Password) */
+.login-form input,
+.login-form .password-input {
+  width: 100%;
+  height: 45px; /* Match button height */
+  padding: 0.6rem;
+  border: 2px solid #6d28d9;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Prevent extra padding issues */
+  outline: none; /* Prevent default outline */
+}
+
+/* Password input container */
+.login-form .password-input-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Password input field */
+.login-form .password-input {
+  padding-right: 2.5rem; /* Space for eye icon */
+}
+
+/* Eye icon button */
+.login-form .toggle-password {
+  position: absolute;
+  right: 23px; /* Adjust to move it inside */
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #6d28d9;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem; /* Ensure proper clickable area */
+  height: 2rem;
+}
+
+/* Ensure eye icon stays clickable */
+.login-form .toggle-password:focus {
+  outline: none;
+}
+
+/* Login Button (ONLY for login page) */
+.login-form .login-button {
+  width: 100%;
+  height: 45px; /* Same as inputs */
+  max-width: 300px; /* Same max width */
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form .login-button:hover {
+  background-color: #5b21b6;
+}
+
+.login-form .login-button:active {
+  transform: translateY(1px);
+}
+
+.active-selection {
+  background-color: #f0426a !important; /* Red-pink */
+  color: white !important;
+  font-weight: bold;
+  border: 2px solid #f0426a !important;
+}
+
+
+/* Dashboard */
+.dashboard-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Data Plan Selection */
+.plan-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.plan-buttons button {
+  min-width: 120px;
+}
+
+/* Payment Summary Modal */
+.payment-summary {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.payment-summary h2 {
+  color: #6d28d9;
+}
+
+.payment-summary p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Profile Page */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-details {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.profile-details p {
+  font-size: 1.2rem;
+}
+
+.profile-details strong {
+  color: #6d28d9;
+}
+
+/* Settings Page */
+.settings-container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Manage Users Section */
+.manage-users-section {
+  margin-top: 2rem;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.users-table th, .users-table td {
+  border: 1px solid #6d28d9;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.users-table th {
+  background: #f0426a !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+
+.delete-button, .delete-all-button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.delete-button:hover, .delete-all-button:hover {
+  background: #dc2626;
+}
+
+.delete-all-button {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  input, select {
+    max-width: 100%;
+  }
+
+  .payment-summary {
+    width: 95%;
+  }
+}
