@@ -7,6 +7,7 @@ body {
 }
 
 /* Navbar Styles */
+
 .navbar-container {
   background-color: #6d28d9; /* Medium purple */
   padding: 1rem 2rem;
@@ -18,6 +19,7 @@ body {
 
 .navbar-links {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -32,9 +34,15 @@ body {
   color: #ddd;
 }
 
-.navbar-logo {
-  justify-self: flex-end;
+.navbar-logo-container {
+  margin-left: auto; 
 }
+
+.navbar-logo {
+  width: 50px;
+  height: 50px; 
+}
+
 
 /* Buttons */
 button {
