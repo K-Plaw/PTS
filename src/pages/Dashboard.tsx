@@ -148,7 +148,7 @@ const Dashboard: React.FC = () => {
   
 
   return (
-    <div>
+    <div className="dashboard-container">
       <h1>Select Your Network</h1>
       <div style={{ display: "flex", gap: "10px" }}>
         {["Airtel", "MTN", "9mobile", "Glo"].map((network) => (

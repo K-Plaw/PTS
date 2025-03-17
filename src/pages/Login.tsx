@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../styles/styles.css';
+import PTS_Logo2 from '../components/PTS_Logo.png';
 
 const Login: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -36,6 +37,7 @@ const Login: React.FC = () => {
 
   return (
     <div className="login-container">
+      <img src={PTS_Logo2} alt="PTS Logo" className="navbar-logo2" />
       <h1>PTS DATA PURCHASE APP</h1>
       <h2>Login</h2>
       <p>Welcome back! Please login to continue.</p>
